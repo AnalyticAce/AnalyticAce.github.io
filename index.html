@@ -1,10 +1,82 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>My Simple HTML Page</title>
-</head>
+<html lang="eng">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>DOSSEH Shalom</title>
+
+		<link rel="stylesheet" href="css/style.css">
+
+		<!--box icons -->
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	</head>
+
 <body>
-	<h1>Welcome to my page!</h1>
-	<p>This is a simple HTML page.</p>
+
+	<!-- header design -->
+	<header class="header">
+		<a href="#" class="logo">Shalom.</a>
+
+		<div class="bx bx-menu" id="menu-icon"></div>
+
+		<nav class="navbar">
+			<a href="#home" class="active">Home</a>
+			<a href="#about">About</a>
+			<a href="#education">Education</a>
+			<a href="#skills">Skills</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</header>
+
+	<!--home section design -->
+	<section class="home" id="home">
+		<div class="home-content">
+			<h1>Hi, I'm <span>Shalom</span></h1>
+			<div class="text-animate">
+				<h3>Data Analyst</h3>
+			</div>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, cumque iusto quisquam voluptate 
+			veritatis odit corrupti obcaecati nam cupiditate atque aperiam necessitatibus dignissimos? Odio libero 
+			officia necessitatibus.</p>
+
+			<div class="btn-box">
+				<a href="#" class="btn">Hire Me</a>
+				<a href="#" class="btn">Let's Talk</a>
+			</div>
+		</div>
+
+		<div class="home-sci">
+			<a href="#"><i class="bx bxl-facebook"></i></a>
+			<a href="#"><i class='bx bxl-twitter'></i></a>
+			<a href="#"><i class='bx bxl-linkedin'></i></a>
+		</div>
+
+		<div class="home-imghover"></div>
+	</section>
+
+	<!--About section  design -->
+	<section class="about" id="about">
+		<h2 class="heading">About <span>Me</span></h2>
+
+		<div class="about-img">
+			<img src="/image/about.jpeg" alt="">
+			<span class="circle-spin"></span>
+		</div>
+
+		<div class="about-content">
+			<h3>Data Analyst!</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae neque, temporibus 
+			beatae repellat libero cupiditate aut doloribus porro consequuntur totam at quod 
+			delectus, eos veniam? Ipsum natus odit odio saepe!</p>
+			
+			<div class="btn-box btns">
+				<a href="#" class="btn">Read More</a>
+			</div>
+		</div>
+	</section>
+
+
+	<script src="js/script.js"> </script>
 </body>
 </html>
