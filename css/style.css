@@ -545,3 +545,43 @@ span {
     border-radius: .6rem;
     border: .2rem solid var(--main-color);
 }
+
+
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder {
+    color: var(--text-color);
+}
+
+.contact form .focus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: red;
+    border-radius: .6rem;
+    z-index: -1;
+}
+
+.contact form .input-box .input-field input::focus~.focus,
+.contact form .input-box .input-field input::valid~.focus,
+.contact {
+    width: 100%;
+}
+
+/* https://youtu.be/sQoiM7i5Nqc?si=c5VbPPZCZGGVMj1M&t=3619 */
+
+.contact form .textarea-field {
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display:  flex;
+}
+
+.contact form .textarea-field textarea {
+    resize: none;
+}
+
+.contact form .btn-box.btns .btn {
+    cursor: pointer;
+}
+
