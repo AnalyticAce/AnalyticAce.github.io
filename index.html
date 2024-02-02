@@ -47,7 +47,7 @@
 
 			<div class="btn-box">
 				<a href="#" class="btn">Hire Me</a>
-				<a href="#" class="btn">Let's Talk</a>
+				<a href="https://www.linkedin.com/in/shalom-dosseh-4a484a262/" class="btn">Let's Talk</a>
 				<span class="animate" style="--i:5;"></span>
 			</div>
 		</div>
@@ -242,24 +242,26 @@
 		<form action="#">
 			<div class="input-box">
 				<div class="input-field">
-					<input type="text" placeholder="Full Name" required>
+					<input type="text" placeholder="Full Name" id="name" required>
 					<span class="focus"></span>
 				</div>	
 				<div class="input-field">
-					<input type="text" placeholder="Email Address" required>
+					<input type="text" placeholder="Email Address" id="email" required>
 					<span class="focus"></span>
 				</div>
 
+				<script src="https://smtpjs.com/v3/smtp.js"></script>
+				<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 				<span class="animate scroll" style="--i:3;"></span>
 			</div>
 
 			<div class="input-box">
 				<div class="input-field">
-					<input type="number" placeholder="Mobile Number" required>
+					<input type="number" placeholder="Mobile Number" id="number"  required>
 					<span class="focus"></span>
 				</div>	
 				<div class="input-field">
-					<input type="text" placeholder="Email Subject" required>
+					<input type="text" placeholder="Email Subject"  id="subject"  required>
 					<span class="focus"></span>
 				</div>
 
@@ -267,7 +269,7 @@
 			</div>
 
 			<div class="textarea-field">
-				<textarea name="" id="" cols="30" rows="10" placeholder="Enter Your Message" required></textarea>
+				<textarea name="" cols="30" rows="10" placeholder="Enter Your Message" id="message" required></textarea>
 				<span class="focus"></span>
 
 				<span class="animate scroll" style="--i:7;"></span>
