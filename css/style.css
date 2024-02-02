@@ -111,7 +111,7 @@ section {
 
 .home-content .text-animate {
     position: relative;
-    width: 21.8rem; /*30.8*/
+    width: 25.8rem; /*30.8*/
 }
 
 .home-content .text-animate h3 {
@@ -127,6 +127,11 @@ section {
     animation-delay: 3s;
 }
 
+.home.show-animate .home-content .text-animate h3 {
+    animation: homeBgText 6s linear infinite;
+    animation-delay: 3s;
+}
+
 .home-content .text-animate h3::before {
     content: '';
     position: absolute;
@@ -136,6 +141,9 @@ section {
     height: 100%;
     border-right: 2px solid var(--main-color);
     z-index: -1;
+}
+
+.home.show-animate .home-content .text-animate h3::before {
     animation: homeCursorText 6s linear infinite;
     animation-delay: 3s;
 }
@@ -323,10 +331,13 @@ span {
 }
 
 .about-content h3 {
+    position: relative;
+    display: inline-block;
     font-size: 2.6rem;
 }
 
 .about-content p {
+    position: relative;
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
@@ -360,11 +371,14 @@ span {
 }
 
 .education-column .title {
+    position: relative;
+    display: inline-block;
     font-size: 2.5rem;
     margin: 0 0 1.5rem 2rem;
 }
 
 .education-column .education-box {
+    position: relative;
     border-left: .2rem solid var(--main-color);
 }
 
@@ -435,7 +449,12 @@ span {
     min-height: auto;
     padding-bottom: 7rem;
     background: var(--second-bg-color);
+}
 
+.skills h2 {
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .skills .skills-row {
@@ -449,8 +468,14 @@ span {
 }
 
 .skills-column .title {
+    position: relative;
+    display: inline-block;
     font-size: 2.5rem;
     margin: 0 0 1.5rem;
+}
+
+.skills-column .skill-box {
+    position: relative;
 
 }
 
@@ -480,9 +505,9 @@ span {
 .skill-box .skills-content:hover::before {
     width: 100%;
 }
+
 .skills-content .progress {
     padding: 1rem 0;
-
 }
 
 .skills-content .progress h3 {
@@ -557,6 +582,12 @@ span {
     max-width: 70rem;
     margin: 0 auto;
     text-align: center;
+}
+
+.contact h2 {
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .contact form .input-box {
@@ -634,6 +665,10 @@ span {
 
 }
 
+.footer-text,
+.footer-iconTop {
+    position: relative;
+}
 .footer-text p {
     font-size: 1.6rem;
 }
@@ -683,7 +718,7 @@ span {
     right: 0;
     width: 100%;
     height: 100%;
-    background: yellowgreen;
+    background: var(--bg-color);
     z-index: 98;
 }
 
@@ -696,21 +731,28 @@ span {
 #menu-icon .animate,
 .home.show-animate .animate {
     animation: showRight 1s ease forwards;
-    animation-delay: calc(.3s * var(--i)) ;
+    animation-delay: calc(.3s * var(--i));
 }
 
 .animate.scroll {
     transition: 1s ease;
     transition-delay: calc(.3s / var(--i));
     animation: none;
-
-    /* https://youtu.be/sQoiM7i5Nqc?si=aAGesMZzWMUm_Dj3&t=6353 */
 }
 
-.about.show-animate .animate.scroll {
+.education .education-box .animate.scroll {
+    width: 100%;
+}
+
+.about.show-animate .animate.scroll,
+.education.show-animate .animate.scroll,
+.skills.show-animate .animate.scroll,
+.contact.show-animate .animate.scroll,
+.footer.show-animate .animate.scroll {
     transition-delay: calc(.3s * var(--i));
     width: 0;
 }
+
 /* breakpoint */
 @media(max-width: 1200px) {
     html  {
