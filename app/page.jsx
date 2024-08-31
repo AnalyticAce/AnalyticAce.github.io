@@ -14,7 +14,7 @@ const Home = () => {
           <div className="text-center xl:text-left">
             <span className="text-xl">Data Driven Expert</span>
             <h1 className="h1 mb-6">
-              Hello I'm <br /> <span className="text-accent">Shalom DOSSEH</span>
+              Hello I&apos;m <br /> <span className="text-accent">Shalom DOSSEH</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
               I excel at crafting decision making tools, and I am proficient in various 
