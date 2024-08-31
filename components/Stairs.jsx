@@ -1,5 +1,4 @@
-import { animate, motion } from "framer-motion"
-import { init } from "next/dist/compiled/webpack/webpack"
+import { motion } from "framer-motion"
 
 // variants
 const stairsAnimation = {
@@ -15,7 +14,11 @@ const stairsAnimation = {
 }
 
 const Stairs = () => {
-    return <div>Stairs</div>
+    return <>
+    
+    {/* render & motion divs, each representing a step of the stairs */}
+    
+    </>
 }
 
 export default Stairs;
