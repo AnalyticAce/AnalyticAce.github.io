@@ -7,29 +7,36 @@ import {BsArrowDownRight} from 'react-icons/bs'
 const services = [
     {
         num: '01',
-        title: "Data Engineering",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        title: "Data Solutions & Analytics",
+        description: "I provide end-to-end data solutions that encompass data engineering, data science, and analytics. From building robust data infrastructures to deriving actionable insights through advanced analytics and machine learning, our services help you unlock the full potential of your data.",
         hrfe: 'https://google.com'
     },
     {
         num: '02',
-        title: "Data Analysis",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        title: "Scripting & Automation",
+        description: "Automate repetitive tasks and streamline workflows with custom scripts and automation solutions. I create tailored automation strategies that boost productivity, reduce errors, and save time across your operations.",
         hrfe: 'https://google.com'
     },
     {
         num: '03',
-        title: "Data Science",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        title: "API Integration",
+        description: "Seamlessly connect your systems and applications with custom API integration services. I enable smooth data exchange and synchronization, enhancing your platform's functionality and interoperability with third-party services.",
         hrfe: 'https://google.com'
     },
     {
         num: '04',
         title: "Development Operations (DevOps)",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        description: "Optimize your development lifecycle with our DevOps services, which include CI/CD pipeline setup, cloud infrastructure management, and automated deployment. I help accelerate your time to market while maintaining high-quality standards.",
+        hrfe: 'https://google.com'
+    },
+    {
+        num: '05',
+        title: "Project Management with Agile Methods",
+        description: "I armed with project management skill, that enables be to make use of Agile frameworks, to ensuring adaptive planning, continuous improvement, and early delivery of valuable products. I focus on enhancing team collaboration, flexibility, and customer satisfaction to drive successful project outcomes.",
         hrfe: 'https://google.com'
     },
 ]
+
 
 const Services = () => {
     return (
