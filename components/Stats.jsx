@@ -22,7 +22,7 @@ const stats = [
 ]
 
 const Stats = () => {
-    return <section>
+    return <section className="pt-2 pb-6 xl:pb-4"> {/* Adjusted pt-4 to pt-2 and pb-12 to pb-6 and xl:pb-4 and xl:pb-8*/}
         <div className="container mx-auto">
             <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none">
                 {stats.map((item, index) => {

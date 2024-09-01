@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
+        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-1 xl:pb-3"> {/*Adjusted pt-8 to pt-1 and pb-24 to pb-3*/}
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Data Driven Expert</span>
