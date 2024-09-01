@@ -1,23 +1,25 @@
 "use client";
 
 import { 
-    FaCss3, FaJs, 
-    FaPython, FaFigma, 
-    FaReact, FaJenkins, 
-    FaHtml5, FaDocker 
+    FaJs, FaPython,
+    FaJenkins, FaDocker, 
+    FaGit, FaUbuntu
 } from "react-icons/fa";
 
-import { SiCplusplusbuilder, 
-    SiAnsible, SiGnubash, 
-    SiPandas, SiApachegroovy, SiYaml,
-    SiApacheairflow, SiGooglecloud, SiLooker, SiMongodb } from "react-icons/si";
+import { SiCplusplusbuilder, SiTraefikproxy, SiGooglebigquery,
+    SiAnsible, SiGnubash, SiMysql, SiSqlite, SiGithubactions, SiGnuemacs,
+    SiPandas, SiApachegroovy, SiYaml, SiGooglesheets, SiPowerbi, SiKubernetes,
+    SiApacheairflow, SiGooglecloud, SiLooker, SiMongodb, SiMicrosoftazure } from "react-icons/si";
+
+import { FcDebian } from "react-icons/fc";
+import { VscVscode } from "react-icons/vsc";
+import { BsFiletypeSql } from "react-icons/bs";
 
 // components
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
-
 
 // about data
 const about = {
@@ -135,6 +137,10 @@ const skills = {
             name: "C ++"
         },
         {
+            icon: <BsFiletypeSql />,
+            name: "SQL"
+        },
+        {
             icon: <FaJs />,
             name: "JavaScript"
         },
@@ -150,6 +156,70 @@ const skills = {
             icon: <SiYaml />,
             name: "YAML"
         },
+    ]
+}
+
+const tools = {
+    title: "Tools",
+    description: "Here are the tools I work with, categorized by type.",
+    sections: [
+        {
+            title: "Libraries",
+            tools: [
+                { icon: <SiPandas />, name: "Pandas" }
+            ]
+        },
+        {
+            title: "CI/CD",
+            tools: [
+                { icon: <FaJenkins />, name: "Jenkins" },
+                { icon: <FaDocker />, name: "Docker" },
+                { icon: <SiKubernetes />, name: "Kubernetes" },
+                { icon: <SiAnsible />, name: "Ansible" },
+                { icon: <SiTraefikproxy />, name: "Traefik" },
+                { icon: <FaGit />, name: "Git Source Control" },
+                { icon: <SiGithubactions />, name: "Git Action" },
+                { icon: <SiApacheairflow />, name: "Apache Airflow" }
+            ]
+        },
+        {
+            title: "Cloud",
+            tools: [
+                { icon: <SiGooglecloud />, name: "Google Cloud" },
+                { icon: <SiMicrosoftazure />, name: "Microsoft Azure" }
+            ]
+        },
+        {
+            title: "Database & Dataware house Management",
+            tools: [
+                { icon: <SiMongodb />, name: "MongoDB" },
+                { icon: <SiGooglebigquery />, name: "Google Bigquery" },
+                { icon: <SiSqlite />, name: "SQLite" },
+                { icon: <SiMysql />, name: "Mysql" }
+            ]
+        },
+        {
+            title: "Dashboarding Tools",
+            tools: [
+                { icon: <SiLooker />, name: "Looker Studio" },
+                { icon: <SiPowerbi />, name: "Power BI" },
+                { icon: <SiGooglesheets />, name: "Google Sheet" }
+            ]
+        },
+        {
+            title: "OS",
+            tools: [
+                { icon: <FaUbuntu />, name: "Ubuntu" },
+                { icon: <FcDebian />, name: "Debian" }
+            ]
+        },
+        {
+            title: "IDE",
+            tools: [
+                { icon: <VscVscode />, name: "VSCode" },
+                { icon: <SiGnuemacs />, name: "Emacs GNU" }
+            ]
+        }
     ]
 }
 
@@ -173,6 +243,7 @@ const Resume = () => {
                         <TabsTrigger value="experience">Experience</TabsTrigger>
                         <TabsTrigger value="education">Education</TabsTrigger>
                         <TabsTrigger value="skills">Skills</TabsTrigger>
+                        <TabsTrigger value="tools">Tools</TabsTrigger>
                         <TabsTrigger value="about">About me</TabsTrigger>
                     </TabsList>
 
@@ -276,6 +347,42 @@ const Resume = () => {
                                     }
                                 )}
                                 </ul>
+                            </div>
+                        </TabsContent>
+
+                        {/* Tools */}
+                        <TabsContent value="tools" className="w-full">
+                            <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                                <h3 className="text-4xl font-bold">{tools.title}</h3>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 description">
+                                    {tools.description}
+                                </p>
+                                <ScrollArea className="h-[400px]">
+                                    {tools.sections.map((section, sectionIndex) => (
+                                        <div key={sectionIndex} className="mb-6">
+                                            <h4 className="text-2xl font-semibold mb-4">{section.title}</h4>
+                                            <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                                                {section.tools.map((tool, toolIndex) => (
+                                                    <li key={toolIndex}>
+                                                        <TooltipProvider delayDuration={100}>
+                                                            <Tooltip>
+                                                                <TooltipTrigger className="w-full h-[150px]
+                                                                bg-[#232329] rounded-xl flex justify-center items-center
+                                                                group">
+                                                                    <div className="text-6xl group-hover:text-accent
+                                                                    transition-all duration-300">{tool.icon}</div>
+                                                                </TooltipTrigger>
+                                                                <TooltipContent>
+                                                                    <p className="capitalize">{tool.name}</p>
+                                                                </TooltipContent>
+                                                            </Tooltip>
+                                                        </TooltipProvider>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    ))}
+                                </ScrollArea>
                             </div>
                         </TabsContent>
 
