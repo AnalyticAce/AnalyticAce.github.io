@@ -19,7 +19,7 @@ const Home = () => {
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
             I am passionate with solving complex problems and creating innovative, 
-            data-driven solutions. With a strong foundation in various programming languages and technologies, 
+            data-driven solutions. With a strong foundation in various technologies, 
             I excel at building and automating decision-making systems to drive efficiency and growth. 
             </p>
             {/* download resume button & Social */}
