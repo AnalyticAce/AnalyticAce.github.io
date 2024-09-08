@@ -23,7 +23,7 @@ const Home = () => {
             </p>
             {/* download resume button & Social */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button 
+              {/* <Button 
                 variant="outline" 
                 size="lg" 
                 className="uppercase flex items-center gap-2"
@@ -32,8 +32,17 @@ const Home = () => {
                 <Link href="https://drive.google.com/file/d/1AOaM-_IGwsV3L5HPIrvV95kaXOSyqNLF/view?usp=drive_link">
                   <FiDownload className="text-xl" />
                 </Link>
-                {/* <FiDownload className="text-xl" path="https://drive.google.com/file/d/1AOaM-_IGwsV3L5HPIrvV95kaXOSyqNLF/view?usp=drive_link" /> */}
-              </Button>
+              </Button> */}
+                <Link href="https://drive.google.com/file/d/1AOaM-_IGwsV3L5HPIrvV95kaXOSyqNLF/view?usp=drive_link">
+                  <Button 
+                    variant="outline" 
+                    size="lg" 
+                    className="uppercase flex items-center gap-2"
+                  >
+                    <span>Download CV</span>
+                    <FiDownload className="text-xl" />
+                  </Button>
+                </Link>
               <div className="mb-8 xl:mb-0">
                 <Social 
                   containerStyles="flex gap-6" 
