@@ -18,7 +18,6 @@ const Home = () => {
               Hello I&apos;m <br /> <span className="text-accent">Shalom DOSSEH</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-            Welcome to my portfolio! 
             I am passionate with solving complex problems and creating innovative, 
             data-driven solutions. With a strong foundation in various programming languages and technologies, 
             I excel at building and automating decision-making systems to drive efficiency and growth. 
