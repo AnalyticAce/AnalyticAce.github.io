@@ -13,7 +13,7 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-1 xl:pb-3"> {/*Adjusted pt-8 to pt-1 and pb-24 to pb-3*/}
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Fullstack Problem Solver 🚀 - Aspiring Hedge Fund Manager</span>
+            <span className="text-xl">Fullstack Problem Solver 🚀</span>
             <h1 className="h1 mb-6">
               Hello I&apos;m <br /> <span className="text-accent">Shalom DOSSEH</span>
             </h1>
@@ -29,7 +29,10 @@ const Home = () => {
                 className="uppercase flex items-center gap-2"
               >
                 <span>Download CV</span>
-                <FiDownload className="text-xl" path="https://drive.google.com/file/d/1AOaM-_IGwsV3L5HPIrvV95kaXOSyqNLF/view?usp=drive_link" />
+                <Link href="https://drive.google.com/file/d/1AOaM-_IGwsV3L5HPIrvV95kaXOSyqNLF/view?usp=drive_link">
+                  <FiDownload className="text-xl" />
+                </Link>
+                {/* <FiDownload className="text-xl" path="https://drive.google.com/file/d/1AOaM-_IGwsV3L5HPIrvV95kaXOSyqNLF/view?usp=drive_link" /> */}
               </Button>
               <div className="mb-8 xl:mb-0">
                 <Social 
