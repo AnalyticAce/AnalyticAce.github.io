@@ -29,7 +29,7 @@ const Home = () => {
                 className="uppercase flex items-center gap-2"
               >
                 <span>Download CV</span>
-                <FiDownload className="text-xl" />
+                <FiDownload className="text-xl" path="https://drive.google.com/file/d/1AOaM-_IGwsV3L5HPIrvV95kaXOSyqNLF/view?usp=drive_link" />
               </Button>
               <div className="mb-8 xl:mb-0">
                 <Social 
