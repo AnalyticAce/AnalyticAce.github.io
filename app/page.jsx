@@ -19,7 +19,7 @@ const Home = () => {
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
             Welcome to my portfolio! 
-            I am a passionate with solving complex problems and creating innovative, 
+            I am passionate with solving complex problems and creating innovative, 
             data-driven solutions. With a strong foundation in various programming languages and technologies, 
             I excel at building and automating decision-making systems that drive efficiency and growth. 
             </p>
