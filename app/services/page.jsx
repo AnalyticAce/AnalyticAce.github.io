@@ -8,13 +8,13 @@ const services = [
     {
         num: '01',
         title: "Data Solutions & Analytics",
-        description: "I provide end-to-end data solutions that encompass data engineering, data science, and analytics. From building robust data infrastructures to deriving actionable insights through advanced analytics and machine learning, our services help you unlock the full potential of your data.",
+        description: "I provide end-to-end data solutions that encompass data engineering, data science, and analytics. From building robust data infrastructures to deriving actionable insights through advanced analytics and machine learning.",
         hrfe: 'https://google.com'
     },
     {
         num: '02',
         title: "Scripting & Automation",
-        description: "Automate repetitive tasks and streamline workflows with custom scripts and automation solutions. I create tailored automation strategies that boost productivity, reduce errors, and save time across your operations.",
+        description: "Automate repetitive tasks and streamline workflows with custom scripts and automation solutions.",
         hrfe: 'https://google.com'
     },
     {
@@ -26,13 +26,13 @@ const services = [
     {
         num: '04',
         title: "Development Operations (DevOps)",
-        description: "Optimize your development lifecycle with our DevOps services, which include CI/CD pipeline setup, cloud infrastructure management, and automated deployment. I help accelerate your time to market while maintaining high-quality standards.",
+        description: "Optimize your development lifecycle with my DevOps skills, which include CI/CD pipeline setup, cloud infrastructure management, and automated deployment. I can't accelerate your time to market while maintaining high-quality standards.",
         hrfe: 'https://google.com'
     },
     {
         num: '05',
-        title: "Project Management with Agile Methods",
-        description: "I armed with project management skill, that enables be to make use of Agile frameworks, to ensuring adaptive planning, continuous improvement, and early delivery of valuable products. I focus on enhancing team collaboration, flexibility, and customer satisfaction to drive successful project outcomes.",
+        title: "Project Management",
+        description: "I armed with project management skill, that enables be to make use of Agile frameworks, to ensuring adaptive planning, continuous improvement, and early delivery of valuable products.",
         hrfe: 'https://google.com'
     },
 ]
