@@ -15,7 +15,7 @@ const Home = () => {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Fullstack Problem Solver 🚀</span>
             <h1 className="h1 mb-6">
-              Hello I&apos;m <br /> <span className="text-accent">Shalom DOSSEH</span>
+              Hello 👋 I&apos;m <br /> <span className="text-accent">Shalom DOSSEH</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
             I am passionate with solving complex problems and creating innovative, 
