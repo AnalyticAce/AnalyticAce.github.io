@@ -20,7 +20,7 @@ const services = [
     {
         num: '03',
         title: "API Integration",
-        description: "Seamlessly connect your systems and applications with custom API integration services. I enable smooth data exchange and synchronization, enhancing your platform's functionality and interoperability with third-party services.",
+        description: "Seamlessly connect your systems and applications with custom API integration services. I enable smooth data exchange, enhancing functionality and interoperability with third-party services.",
         hrfe: 'https://google.com'
     },
     {
