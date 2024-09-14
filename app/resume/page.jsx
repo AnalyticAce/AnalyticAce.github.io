@@ -114,12 +114,20 @@ const education = {
         {
             company: "DataCamp",
             position: "Data Analyst Certification",
-            duration: "2024 - Present"
+            //duration: "2024 - Present"
+            duration: "On Track"
+        },
+        {
+            company: "DataCamp",
+            position: "SQL Associate Certification",
+            // duration: "2024 - Present"
+            duration: "On Track"
         },
         {
             company: "Project Management Institute",
             position: "Certified Associate in Project Management",
-            duration: "2024 - Present"
+            // duration: "2024 - Present"
+            duration: "On Track"
         },
     ]
 }
