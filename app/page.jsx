@@ -24,7 +24,7 @@ const Home = () => {
             </p>
             {/* download resume button & Social */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-                <Link href="https://drive.google.com/file/d/1AOaM-_IGwsV3L5HPIrvV95kaXOSyqNLF/view?usp=drive_link">
+                <Link href="https://docs.google.com/document/d/1txq9Mz-ivQ7zd0UaZDrj0Fp176F7I5MAv11UUpveFj8/edit?usp=sharing">
                   <Button 
                     variant="outline" 
                     size="lg" 

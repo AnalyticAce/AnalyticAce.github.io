@@ -106,3 +106,45 @@ const Contact = () => {
 }
 
 export default Contact;
+
+
+// const form = document.querySelector('form')
+// const fullName = document.getElementById("name")
+// const mess = document.getElementById("message")
+// const number = document.getElementById("number")
+// const subject = document.getElementById("subject")
+// const email = document.getElementById("email")
+
+// function SendEmail() {
+
+//     const bodyMassage = `Full Name: ${fullName.value}<br> Email:
+//     ${email.value}<br> Number : ${number.value}<br> Message: ${mess.value}`;
+
+//     Email.send({
+//         SecureToken : "adae5b2b-48df-4fd6-95da-5bd5236f2722",
+//         To : 'dossehdosseh14@gmail.com',
+//         From : "dossehdosseh14@gmail.com",
+//         Subject : subject.value,
+//         Body : bodyMassage
+//     }).then(
+//         message => {
+//             if (message == "OK") {
+//                 Swal.fire(
+//                     {
+//                         title: "Success!",
+//                         text: "Message sent successfull",
+//                         icon: "success"
+//                     }
+//                 );
+//             }
+//         }
+//     );
+// }
+
+// form.addEventListener('submit', (e) => {
+//     e.preventDefault();
+
+//     SendEmail();
+//     form.reset();
+//     return false;
+// })
