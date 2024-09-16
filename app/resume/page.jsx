@@ -69,12 +69,12 @@ const experience = {
     items: [
         {
             company: "Gozem - Africa's Super App",
-            position: "E-Banking & Product Data Analyst (Intern)",
+            position: "E-Banking & Product Data Analyst",
             duration: "July 2024 - Present"
         },
         {
             company: "Gozem - Africa's Super App",
-            position: "Transport Data Analyst (Intern)",
+            position: "Transport Data Analyst",
             duration: "Sept 2023 - Jan 2024"
         },
         {
