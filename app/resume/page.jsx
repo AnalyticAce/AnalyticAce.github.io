@@ -24,7 +24,7 @@ import { motion } from "framer-motion";
 // about data
 const about = {
     title: "About me",
-    description: "This section offers a brief introduction of myself, interests, and values.",
+    description: "This section offers a brief introduction of myself",
     info: [
         {
             fieldName: "Name",
