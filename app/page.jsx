@@ -20,7 +20,7 @@ const Home = () => {
             <p className="max-w-[500px] mb-9 text-white/80">
             I am passionate with solving complex problems by creating data-driven
             solutions. With a strong foundation in various technologies, 
-            I'm skilled at engineering decision-making systems to accelarete efficiency and growth. 
+            I&apos;m skilled at engineering decision-making systems to accelarete efficiency and growth. 
             </p>
             {/* download resume button & Social */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
