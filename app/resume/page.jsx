@@ -38,10 +38,10 @@ const about = {
             fieldName: "Experience",
             fieldValue: "2+ Years"
         },
-        {
-            fieldName: "Discord",
-            fieldValue: "dossehshalom"
-        },
+        // {
+        //     fieldName: "Discord",
+        //     fieldValue: "dossehshalom"
+        // },
         {
             fieldName: "Nationality",
             fieldValue: "Beninesse"
@@ -56,7 +56,8 @@ const about = {
         },
         {
             fieldName: "Languages",
-            fieldValue: "English, French, Fon"
+            // fieldValue: "English, French, Fon"
+            fieldName: "Billingual (English, French), Fongbè"
         },
     ]
 }
@@ -65,7 +66,7 @@ const about = {
 const experience = {
     icon: './asset/resume/badge.svg',
     title: "My experience",
-    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    description: "This section presents an overview of my professional background and key accomplishments.",
     items: [
         {
             company: "Gozem - Africa's Super App",
@@ -104,7 +105,7 @@ const experience = {
 const education = {
     icon: './asset/resume/cap.svg',
     title: "My education",
-    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    description: "This section presents an overview of my educational background and certifications.",
     items: [
         {
             company: "EPITECH",
@@ -134,7 +135,7 @@ const education = {
 
 const skills = {
     title: "My skills",
-    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    description: "This section presents an overview of the programming languages I'm proficient at use in my day-to-day activities",
     skilllist: [
         {
             icon: <FaPython />,
@@ -169,7 +170,7 @@ const skills = {
 
 const tools = {
     title: "Tools",
-    description: "Here are the tools I work with, categorized by type.",
+    description: "This section presents an overview of the tools and technologies.",
     sections: [
         {
             title: "Libraries",
@@ -184,7 +185,7 @@ const tools = {
                 { icon: <FaDocker />, name: "Docker" },
                 { icon: <SiKubernetes />, name: "Kubernetes" },
                 { icon: <SiAnsible />, name: "Ansible" },
-                { icon: <SiTraefikproxy />, name: "Traefik" },
+                // { icon: <SiTraefikproxy />, name: "Traefik" },
                 { icon: <FaGit />, name: "Git Source Control" },
                 { icon: <SiGithubactions />, name: "Git Action" },
                 { icon: <SiApacheairflow />, name: "Apache Airflow" }
