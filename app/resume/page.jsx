@@ -38,10 +38,6 @@ const about = {
             fieldName: "Experience",
             fieldValue: "2+ Years"
         },
-        // {
-        //     fieldName: "Discord",
-        //     fieldValue: "dossehshalom"
-        // },
         {
             fieldName: "Nationality",
             fieldValue: "Beninesse"
@@ -56,8 +52,7 @@ const about = {
         },
         {
             fieldName: "Languages",
-            // fieldValue: "English, French, Fon"
-            fieldValue: "English, French), Fongbè"
+            fieldValue: "English, French, Fon"
         },
     ]
 }
