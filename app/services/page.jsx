@@ -8,7 +8,7 @@ const services = [
     {
         num: '01',
         title: "Data Solutions & Analytics",
-        description: "I provide end-to-end data solutions that encompass data engineering, data science, and analytics. From building robust data infrastructures to deriving actionable insights through advanced analytics and machine learning.",
+        description: "I provide end-to-end data solutions that encompass data engineering, data science, and analytics.",
         hrfe: 'https://google.com'
     },
     {
@@ -26,7 +26,7 @@ const services = [
     {
         num: '04',
         title: "Development Operations (DevOps)",
-        description: "Optimize your development lifecycle with my DevOps skills, which include CI/CD pipeline setup, cloud infrastructure management, and automated deployment. I can't accelerate your time to market while maintaining high-quality standards.",
+        description: "Optimize your development lifecycle with my DevOps skills, which include CI/CD pipeline setup, cloud infrastructure management, and automated deployment.",
         hrfe: 'https://google.com'
     },
     {
