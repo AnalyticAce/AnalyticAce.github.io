@@ -13,13 +13,13 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-1 xl:pb-3"> {/*Adjusted pt-8 to pt-1 and pb-24 to pb-3*/}
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Problem Solver</span>
+            <span className="text-xl">Data-Driven Innovator - Problem Solver</span>
             <h1 className="h1 mb-6">
               Hello I&apos;m <br /> <span className="text-accent">Shalom DOSSEH</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-            I am passionate with solving complex problems and creating innovative, 
-            data-driven solutions. With a strong foundation in various technologies, 
+            I am passionate with solving complex problems by creating data-driven
+            solutions. With a strong foundation in various technologies, 
             I excel at engineering decision-making systems to accelarete efficiency and growth. 
             </p>
             {/* download resume button & Social */}
