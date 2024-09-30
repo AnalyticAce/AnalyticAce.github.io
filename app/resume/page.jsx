@@ -24,7 +24,7 @@ import { motion } from "framer-motion";
 // about data
 const about = {
     title: "About me",
-    description: "This section offers a brief introduction of myself",
+    description: "This section offers a brief introduction of myself, interests, and values.",
     info: [
         {
             fieldName: "Name",
@@ -57,7 +57,7 @@ const about = {
         {
             fieldName: "Languages",
             // fieldValue: "English, French, Fon"
-            fieldName: "English, French, Fongbè"
+            fieldValue: "English, French), Fongbè"
         },
     ]
 }
