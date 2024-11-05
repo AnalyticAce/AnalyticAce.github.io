@@ -65,7 +65,7 @@ const experience = {
     items: [
         {
             company: "Gozem - Africa's Super App",
-            position: "E-Banking & Product Data Analyst",
+            position: "Data Scientist (E-Banking / Product)",
             duration: "July 2024 - Present"
         },
         {
