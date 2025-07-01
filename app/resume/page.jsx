@@ -242,10 +242,10 @@ const Resume = () => {
                     ease: "easeIn",
                 },
             }}
-            className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+            className="min-h-screen flex items-center justify-center py-8 px-4 sm:py-12 xl:py-0"
         >
-            <div className="container mx-auto">
-                <Tabs defaultValue="experience" className="flex flex-col xl:flex-row gap-[60px]">
+            <div className="container mx-auto px-4">
+                <Tabs defaultValue="experience" className="flex flex-col xl:flex-row gap-8 xl:gap-[60px]">
                     <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-y-4">
                         <TabsTrigger value="experience">Experience</TabsTrigger>
                         <TabsTrigger value="education">Education</TabsTrigger>
@@ -255,25 +255,25 @@ const Resume = () => {
                     </TabsList>
 
                     {/* content */}
-                    <div className="min-h-[70vh] w-full">
+                    <div className="min-h-[50vh] w-full">
                         {/* experience */}
                         <TabsContent value="experience" className="w-full">
-                            <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                                <h3 className="text-4xl font-bold">{experience.title}</h3>
-                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 description">
+                            <div className="flex flex-col gap-6 xl:gap-[30px] text-center xl:text-left">
+                                <h3 className="text-2xl sm:text-3xl xl:text-4xl font-bold">{experience.title}</h3>
+                                <p className="max-w-full xl:max-w-[600px] text-white/60 mx-auto xl:mx-0 description">
                                     {experience.description}
                                 </p>
-                                <ScrollArea className="h-[400px]">
-                                    <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                                <ScrollArea className="h-[300px] sm:h-[400px]">
+                                    <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4 xl:gap-[30px]">
                                         {experience.items.map((item, index) => {
                                             return (
                                                 <li
                                                     key={index}
-                                                    className="bg-[#232329] h-[184px] py-6 px-10
+                                                    className="bg-[#232329] min-h-[150px] sm:h-[184px] py-4 px-6 sm:py-6 sm:px-10
                                                     rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                                                 >
                                                     <span className="text-accent">{item.duration}</span>
-                                                    <h3 className="text-xl max-w-[260px] min-h-[60px] 
+                                                    <h3 className="text-lg sm:text-xl max-w-[260px] min-h-[60px] 
                                                     text-center lg:text-left">
                                                         {item.position}
                                                     </h3>
@@ -292,13 +292,13 @@ const Resume = () => {
                         
                         {/* education */}
                         <TabsContent value="education" className="w-full">
-                            <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                                <h3 className="text-4xl font-bold">{education.title}</h3>
-                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 description">
+                            <div className="flex flex-col gap-6 xl:gap-[30px] text-center xl:text-left">
+                                <h3 className="text-2xl sm:text-3xl xl:text-4xl font-bold">{education.title}</h3>
+                                <p className="max-w-full xl:max-w-[600px] text-white/60 mx-auto xl:mx-0 description">
                                     {education.description}
                                 </p>
-                                <ScrollArea className="h-[400px]">
-                                    <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                                <ScrollArea className="h-[300px] sm:h-[400px]">
+                                    <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4 xl:gap-[30px]">
                                         {education.items.map((item, index) => {
                                             return (
                                                 <li
@@ -326,9 +326,9 @@ const Resume = () => {
 
                         {/* skill */}
                         <TabsContent value="skills" className="w-full">
-                            <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                                <h3 className="text-4xl font-bold">{skills.title}</h3>
-                                <p className="max-w-[400px] text-white/60 mx-auto xl:mx-0 description">
+                            <div className="flex flex-col gap-6 xl:gap-[30px] text-center xl:text-left">
+                                <h3 className="text-2xl sm:text-3xl xl:text-4xl font-bold">{skills.title}</h3>
+                                <p className="max-w-full xl:max-w-[400px] text-white/60 mx-auto xl:mx-0 description">
                                     {skills.description}
                                 </p>
                                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4
@@ -338,10 +338,10 @@ const Resume = () => {
                                             <li key={index}>
                                                 <TooltipProvider delayDuration={100}>
                                                     <Tooltip>
-                                                        <TooltipTrigger className="w-full h-[150px]
+                                                        <TooltipTrigger className="w-full h-[120px] sm:h-[150px]
                                                         bg-[#232329] rounded-xl flex justify-center items-center
                                                         group">
-                                                            <div className="text-6xl group-hover:text-accent
+                                                            <div className="text-4xl sm:text-6xl group-hover:text-accent
                                                             transition-all duration-300">{skill.icon}</div>
                                                         </TooltipTrigger>
                                                         <TooltipContent>
@@ -359,24 +359,24 @@ const Resume = () => {
 
                         {/* Tools */}
                         <TabsContent value="tools" className="w-full">
-                            <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                                <h3 className="text-4xl font-bold">{tools.title}</h3>
-                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 description">
+                            <div className="flex flex-col gap-6 xl:gap-[30px] text-center xl:text-left">
+                                <h3 className="text-2xl sm:text-3xl xl:text-4xl font-bold">{tools.title}</h3>
+                                <p className="max-w-full xl:max-w-[600px] text-white/60 mx-auto xl:mx-0 description">
                                     {tools.description}
                                 </p>
-                                <ScrollArea className="h-[400px]">
+                                <ScrollArea className="h-[300px] sm:h-[400px]">
                                     {tools.sections.map((section, sectionIndex) => (
                                         <div key={sectionIndex} className="mb-6">
-                                            <h4 className="text-2xl font-semibold mb-4">{section.title}</h4>
+                                            <h4 className="text-xl sm:text-2xl font-semibold mb-4">{section.title}</h4>
                                             <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
                                                 {section.tools.map((tool, toolIndex) => (
                                                     <li key={toolIndex}>
                                                         <TooltipProvider delayDuration={100}>
                                                             <Tooltip>
-                                                                <TooltipTrigger className="w-full h-[150px]
+                                                                <TooltipTrigger className="w-full h-[120px] sm:h-[150px]
                                                                 bg-[#232329] rounded-xl flex justify-center items-center
                                                                 group">
-                                                                    <div className="text-6xl group-hover:text-accent
+                                                                    <div className="text-4xl sm:text-6xl group-hover:text-accent
                                                                     transition-all duration-300">{tool.icon}</div>
                                                                 </TooltipTrigger>
                                                                 <TooltipContent>
@@ -395,19 +395,19 @@ const Resume = () => {
 
                         {/* about */}
                         <TabsContent value="about" className="w-full h-full">
-                            <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                                <h3 className="text-4xl font-bold">{about.title}</h3>
-                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 description">
+                            <div className="flex flex-col gap-6 xl:gap-[30px] text-center xl:text-left">
+                                <h3 className="text-2xl sm:text-3xl xl:text-4xl font-bold">{about.title}</h3>
+                                <p className="max-w-full xl:max-w-[600px] text-white/60 mx-auto xl:mx-0 description">
                                     {about.description}
                                 </p>
-                                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6
-                                max-w-[620px] mx-auto xl:mx-0">
+                                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-4 xl:gap-y-6
+                                max-w-full xl:max-w-[620px] mx-auto xl:mx-0">
                                     {about.info.map((item, index) => {
                                         return (
                                             <li key={index} className="flex items-center 
-                                            justify-center xl:justify-start gap-4">
-                                                <span className="text-white/60">{item.fieldName}</span>
-                                                <span className="text-xl">{item.fieldValue}</span>
+                                            justify-center xl:justify-start gap-4 px-4">
+                                                <span className="text-white/60 text-sm sm:text-base">{item.fieldName}</span>
+                                                <span className="text-lg sm:text-xl">{item.fieldValue}</span>
                                             </li>
                                         );
                                     }
