@@ -8,7 +8,7 @@ import StairTransition from "@/components/StairTransition";
 
 const jetbrainsmono = JetBrains_Mono({ 
   subsets: ["latin"],
-  weights: ['100', '200', '300', '400', '500', '600', '700', '800'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
   variable: '--font-jetbrainsMono', // CSS
 
 });
