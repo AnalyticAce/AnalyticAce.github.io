@@ -8,8 +8,11 @@ import {
 
 import { SiCplusplusbuilder, SiTraefikproxy, SiGooglebigquery,
     SiAnsible, SiGnubash, SiMysql, SiSqlite, SiGithubactions, SiGnuemacs,
-    SiPandas, SiApachegroovy, SiYaml, SiGooglesheets, SiPowerbi, SiKubernetes,
-    SiApacheairflow, SiGooglecloud, SiLooker, SiMongodb, SiMicrosoftazure } from "react-icons/si";
+    SiPandas, SiApachegroovy, SiYaml, SiGooglesheets, SiKubernetes,
+    SiApacheairflow, SiGooglecloud, SiLooker, SiMongodb } from "react-icons/si";
+
+import { BiLogoMicrosoft } from "react-icons/bi";
+import { MdDashboard } from "react-icons/md";
 
 import { FcDebian } from "react-icons/fc";
 import { VscVscode } from "react-icons/vsc";
@@ -190,7 +193,7 @@ const tools = {
             title: "Cloud",
             tools: [
                 { icon: <SiGooglecloud />, name: "Google Cloud" },
-                { icon: <SiMicrosoftazure />, name: "Microsoft Azure" }
+                { icon: <BiLogoMicrosoft />, name: "Microsoft Azure" }
             ]
         },
         {
@@ -206,7 +209,7 @@ const tools = {
             title: "Dashboarding Tools",
             tools: [
                 { icon: <SiLooker />, name: "Looker Studio" },
-                { icon: <SiPowerbi />, name: "Power BI" },
+                { icon: <MdDashboard />, name: "Power BI" },
                 { icon: <SiGooglesheets />, name: "Google Sheet" }
             ]
         },
